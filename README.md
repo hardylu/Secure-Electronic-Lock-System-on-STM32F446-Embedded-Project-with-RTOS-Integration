@@ -2,43 +2,6 @@
 Modular embedded password lock built on STM32F4 with FreeRTOS, featuring interrupt-driven input, task separation, and watchdog safety.
 An RTOS-based electronic lock system developed on STM32F446, featuring UART input, keypad interrupts, LED indicators, and robust task separation using FreeRTOS. This project demonstrates real-time multitasking, inter-task synchronization, and modular firmware architecture.
 
-📂 Project Structure
-stm32f4-password-lock-rtos/
-
-├── Core/
-
-│   ├── Inc/
-
-│   │   ├── main.h
-
-│   │   ├── freertos_tasks.h
-
-│   │   ├── gpio.h
-
-│   │   └── usart.h
-
-│   └── Src/
-
-│       ├── main.c
-
-│       ├── freertos_tasks.c
-
-│       ├── gpio.c
-
-│       ├── usart.c
-
-│       └── stm32f4xx_it.c
-
-├── FreeRTOS/                ← RTOS kernel & CMSIS adapter
-
-├── Drivers/                 ← HAL drivers
-
-├── README.md
-
-└── .gitignore
-
-
-
 ⚙️ Features
 
 🟢 RTOS Task-Based Design – Modular task for password handling, LED reset, keypad monitoring, and watchdog feed
